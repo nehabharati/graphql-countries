@@ -43,7 +43,7 @@ const Countries = () => (
   >
 
     {({ loading, error, data }) => {
-      if (loading) return <p>Loading...</p>;
+      if (loading) return <p className="loading">Loading...</p>;
       if (error) return <p>Error :(</p>;
       console.log(data)
       return data.Country.map((country, i) => (

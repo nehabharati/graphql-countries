@@ -50,3 +50,9 @@ body {
     width: 200px;
   }
 }
+
+.loading {
+  text-align: center;
+  margin: 3em;
+  font-size: 2rem;
+}
