@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada:wght@400;700&family=Syne:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Scada',sans-serif; 
+}
+ 
+.card-container { 
+  flex-wrap: wrap;
+  width: auto; 
+  background-color:#fcf0ec;
+  margin: 1em 3em;
+  padding: 1em;
+  color:#333;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: large;  
+}
+
+.card div {
+  margin: 0 2em;
+  font-weight: 700;
+}
+
+.card img {
+  width: 300px;
+}
+ 
+@media (max-width:1040px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .basic-info {
+    text-align: center;
+  } 
+}
+
+@media (max-width:450px) {
+  .card img {
+    width: 200px;
+  }
+}
